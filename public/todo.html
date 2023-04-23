@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="main">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <a id="logout" href="" onclick="doLogout(event)">Logout</a>
+          </ul>
+      </nav>
+    </header>
+
+    <div id="logo">
+      <img src="./img/food.jpg" width="300" height="200" /> 
+      <img src="./img/wellness.jpg" width="300" height="200" /> 
+      <img src="./img/tracker.jpg" width="300" height="200" /> 
+      <img src="./img/health.jpg" width="300" height="200" />
+    </div>
+
+    <body>
+      <header>
+        <h1>Workout Tracker</h1>
+        <form id="new-task-form">
+          <input 
+            type="text" 
+            name="new-task-input" 
+            id="new-task-input" 
+            placeholder="What did you do?" />
+          <input 
+            type="submit"
+            id="new-task-submit" 
+            value="Add" />
+        </form>
+      </header>
+      <main>
+        <section class="task-list">
+          <h2>Workout Log</h2>
+    
+          <div id="tasks">
+    
+          </div>
+        </section>
+      </main>
+    
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+      </ul>
+    </nav>
+    <p> Author: <a href="https://github.com/alvaral10">Alicia Alvarez</a></p>
+    </footer>
+   </div>
+  </body>
+  <script src="./src/build-tasks-list.js"></script>
+  <script src="./src/add-tracker.js"></script>
+  <script src="./src/app.js"></script>
+ </html>

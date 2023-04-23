@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="main wrapper">
+      <header>
+        <nav>
+          <ul>
+            <li class="nav-item"><a href="./index.html">Home</a></li>
+            <li class="nav-item"><a href="./todo.html">Tracker</a></li>
+            <li class="nav-item"><a href="./about.html">About</a></li>
+            <a id="logout" href="" onclick="doLogout(event)">Logout</a>
+          </ul>
+        </nav>
+      </header>
+
+      <div id="logo">
+        <img src="./img/food.jpg" width="300" height="200" /> 
+        <img src="./img/wellness.jpg" width="300" height="200" /> 
+        <img src="./img/tracker.jpg" width="300" height="200" /> 
+        <img src="./img/health.jpg" width="300" height="200" />
+      </div>
+      <script src="./src/app.js"></script>
+
+      <script>
+          var today = new Date();
+          var hourNow = today.getHours();
+          var greeting;
+
+          if (hourNow > 18){
+              greeting = 'Good Evening';
+              }else if (hourNow >12){
+              greeting = 'Good Afternoon';
+              }else if (hourNow >0){
+              greeting = 'Good Morning';
+              }else{
+              greeting = 'Welcome';
+            }
+
+            document.write('<h1>' + greeting + ' from A.M Fitness!!</h1>');
+      </script>
+
+          <p>
+            Welcome...We are here to provide you with all your health and fitness needs.
+          </p>
+          <br />
+
+      <footer>
+        <p>Author: <a href="https://github.com/alvaral10">Alicia Alvarez</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
